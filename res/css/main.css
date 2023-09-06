@@ -66,7 +66,18 @@ body{
     top: -50%;
     left: -50%;
     z-index: -1;
-    background: url(../images/veg_broccoli.svg) 35% 8% no-repeat, var(--accent);
+    background: url(../images/fruit_tmt.svg) 75% 75% no-repeat, var(--accent);
+    background-size: 300px;
+  }
+.banner::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url(../images/veg_broccoli.svg) 35% 8% no-repeat;
     background-size: 180px;
     transform: rotate(-30deg);
   }
@@ -94,17 +105,6 @@ body{
     background-size: 200px;
     transform: rotate(45deg);    
   }
-  .banner::after {
-      content: "";
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      top: -50%;
-      left: -50%;
-      z-index: -1;
-      background: url(../images/fruit_tmt.svg) 75% 75% no-repeat;
-      background-size: 300px;
-    }
   .banner_text {
     filter: invert(1);
   }
