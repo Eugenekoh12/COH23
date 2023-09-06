@@ -19,18 +19,32 @@
     ],
     /* "shortcuts": [
       {
-        "name": "How's weather today?",
-        "short_name": "Today",
+        "name": "Healthy Eating",
+        "short_name": "Food",
         "description": "View weather information for today",
         "url": "/today?source=pwa",
-        "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+        "icons": [{ "src": "res/images/food_app.png", "sizes": "192x192" }]
       },
       {
-        "name": "How's weather tomorrow?",
-        "short_name": "Tomorrow",
+        "name": "Exercising",
+        "short_name": "Exercise",
         "description": "View weather information for tomorrow",
         "url": "/tomorrow?source=pwa",
-        "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+        "icons": [{ "src": "res/images/exercise_app.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Sleep Schedule",
+        "short_name": "Sleep",
+        "description": "View weather information for tomorrow",
+        "url": "/tomorrow?source=pwa",
+        "icons": [{ "src": "res/images/sleep_app.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Rewards Redemption",
+        "short_name": "Rewards",
+        "description": "View weather information for tomorrow",
+        "url": "/tomorrow?source=pwa",
+        "icons": [{ "src": "res/images/rewards_app.png", "sizes": "192x192" }]
       }
     ], */
     "description": "Colour our Health WebApp",
