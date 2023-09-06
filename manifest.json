@@ -1,0 +1,21 @@
+{
+    "name": "Colour our Health", // installation name
+    "short_name": "CoH", // app title name
+    "start_url": ".",
+    "theme_color": "#272020",
+    "background_color": "#F1EEEE",
+    "display": "standalone",
+    "icons":[
+      {
+        "src":"res/images/logo192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src":"res/images/logo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  
+  }
