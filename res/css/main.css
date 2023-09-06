@@ -1,0 +1,64 @@
+:root {
+    --background: #f9fcf8;
+    --text: #0a1207;
+    --primary: #D1CBCB;
+    --secondary: #f1eeee;
+    --accent: #CD9D38;
+}
+#logo_big_light, #logo_big_dark {
+  height: 10vh !important;
+}
+#logo_big_light {
+  display:initial;
+}
+#logo_big_dark {
+  display:none;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a1207;
+        --text: #f9fcf8;
+        --primary: #D1CBCB;
+        --secondary: #272020;
+        --accent: #EAD29F;
+    }
+    #logo_big_light {
+        display:none !important;
+    }
+    #logo_big_dark {
+        display:initial !important;
+    }
+}
+html {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+    background: url(../images/bg.png) no-repeat center center fixed, var(--background); 
+    background-size: cover;
+}
+body{
+    background: transparent;
+    color: var(--text);
+}
+
+.default {
+    text-align: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner {
+    width: 90vw;
+    padding: 1px;
+    background: url(../images/fruit_tmt.svg) 120% 200% no-repeat,  var(--accent);
+    background-size: 300px;
+    color: var(--secondary);
+    border-radius: 50px;
+}
