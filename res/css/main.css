@@ -67,7 +67,7 @@ body{
     left: -50%;
     z-index: -1;
     background: url(../images/fruit_tmt.svg) 75% 75% no-repeat, var(--accent);
-    background-size: 300px;
+    background-size: calc(20vh + 10vw);
   }
 .banner::after {
     content: "";
@@ -78,7 +78,7 @@ body{
     left: -50%;
     z-index: -1;
     background: url(../images/veg_broccoli.svg) 35% 8% no-repeat;
-    background-size: 180px;
+    background-size: calc(10vh + 10vw);
     transform: rotate(-30deg);
   }
   .bg_addon::before {
@@ -90,7 +90,7 @@ body{
     left: -50%;
     z-index: -1;
     background: url(../images/veg_broccoli.svg) 40% 40% no-repeat;
-    background-size: 200px;
+    background-size: calc(10vh + 10vw);
     transform: rotate(10deg);
   }
   .bg_addon::after {
@@ -102,7 +102,7 @@ body{
     left: -50%;
     z-index: -1;
     background: url(../images/veg_broccoli.svg) 52% 70% no-repeat;
-    background-size: 200px;
+    background-size: calc(10vh + 10vw);
     transform: rotate(45deg);    
   }
   .banner_text {
