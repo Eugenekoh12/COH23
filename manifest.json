@@ -61,6 +61,5 @@
         "icons": [{ "src": "./res/images/rewards_app.png", "sizes": "192x192" }]
       }
     ],
-    "description": "Keep Colour our Health with you anywhere with our Progressive Web App!",
-  
-  }
+    "description": "Keep Colour our Health with you anywhere with our Progressive Web App!"
+}
