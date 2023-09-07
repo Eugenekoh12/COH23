@@ -34,7 +34,75 @@
         <script src="/res/js/main.js"></script>
     </nav>
     <div class="default">
-        <h1>BMI</h1>
+        <div>
+            <h1>BMI Calculator</h1>
+            <p>Enter your weight (kg): <input type="text" id="weight"></p>
+            <p>Enter your height (cm): <input type="text" id="height"></p>
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <p><span id="pre_result" style="display:none;">Your BMI is: </span><span id="result"></span></p>
+          
+            <script>
+              function calculateBMI() {
+                // Get the user's weight and height input
+                var weight = parseFloat(document.getElementById("weight").value);
+                var height = parseFloat(document.getElementById("height").value);
+                var bmi = 0;
+          
+                // Check if the inputs are valid numbers
+                if (!isNaN(weight) && !isNaN(height)) {
+                  // Calculate BMI
+                  let bmi = (weight / ((height * height) / 10000)).toFixed(2);
+                  // Display the result
+                  document.getElementById("result").textContent = bmi
+                  document.getElementById("pre_result").style.display = "initial";
+                } else {
+                  // Display an error message if inputs are invalid
+                  document.getElementById("result").textContent = "Please enter valid weight and height.";
+                  document.getElementById("pre_result").style.display = "none";
+                }
+              }
+            </script>
+            </div>
+            <div class="default">
+                <table id="searchTable" style="border-collapse: none;">
+                    <tr>
+                        <th>Classification</th>
+                        <th>BMI Range</th>
+                    </tr>
+                    <tr>
+                        <td>Severely Underweight</td>
+                        <td>&lt; 16</td>
+                    </tr>
+                    <tr>
+                        <td>Moderately Underweight</td>
+                        <td>16 - 17</td>
+                    </tr>
+                    <tr>
+                        <td>Slightly Underweight</td>
+                        <td>17 - 18.5</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>18.5 - 25</td>
+                    </tr>
+                    <tr>
+                        <td>Slightly Overweight</td>
+                        <td>25 - 30</td>
+                    </tr>
+                    <tr>
+                        <td>Moderately Underweight</td>
+                        <td>30 - 35</td>
+                    </tr>
+                    <tr>
+                        <td>Severely Underweight</td>
+                        <td>35 - 40</td>
+                    </tr>
+                    <tr>
+                        <td>Extremely Underweight</td>
+                        <td>&gt; 40</td>
+                    </tr>
+                </table>
+            </div>
     </div>
 </body>
 </html>
