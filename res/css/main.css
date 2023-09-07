@@ -109,7 +109,7 @@ body{
     padding-top: 75px;
     padding-bottom: 75px;
     width: 75vw;
-    min-width: 250px;
+    min-width: 200px;
     filter: invert(1);
   }
   @media (prefers-color-scheme: dark) {
