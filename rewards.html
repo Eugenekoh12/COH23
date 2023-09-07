@@ -34,7 +34,73 @@
         <script src="/res/js/main.js"></script>
     </nav>
     <div class="default">
-        <h1>Sleep Schedules</h1>
+        <h1>Rewards & Redemption</h1>
+        <div class="rewards_list">
+            <input type="text" id="searchRewards" onkeyup="rewards()" placeholder="What reward catches your fancy?" title="Type in a reward to search for">
+            <table id="searchTable">
+                <tr class="header">
+                  <th style="width:20%;">Item</th>
+                  <th style="width:10%;">Points</th>
+                  <th style="width:30%;">Preview</th>
+                  <th style="width:40%;">Description</th>
+                </tr>
+                <tr>
+                  <td>TransitLink Voucher ($1)</td>
+                  <td>50</td>
+                  <td><img src="res/images/reward-ezlink.png" alt="Image of TransitLink Voucher"></td>
+                  <td>TransitLink Voucher</td>
+                </tr>
+                <tr>
+                  <td>Community Chest ($1)</td>
+                  <td>50</td>
+                  <td><img src="res/images/reward-comchest.png" alt="Image of Community Chest Donation"></td>
+                  <td>Donate to the Community Chest</td>
+                </tr>
+                <tr>
+                  <td>Fairprice NTUC Voucher (SGD $10)</td>
+                  <td>500</td>
+                  <td><img src="res/images/reward-fp.webp" alt="Image of NTUC Fairprice Voucher"></td>
+                  <td>Fairprice NTUC Vouchers for you to spend and enjoy the fruits of your labour.</td>
+                </tr>
+                <tr>
+                  <td>2x LiHO Voucher (SGD $5)</td>
+                  <td>500</td>
+                  <td><img src="res/images/reward-liho.png" alt="Image of LiHO Voucher"></td>
+                  <td>2x LiHO Vouchers for you to spend and enjoy the fruits of your labour.</td>
+                </tr>
+                <tr>
+                  <td>2x Health Promotion Board Voucher (SGD $5)</td>
+                  <td>500</td>
+                  <td><img src="res/images/reward-hpb.png" alt="Image of HPB Voucher"></td>
+                  <td>2x HPB Vouchers for you to spend and enjoy the fruits of your labour.</td>
+                </tr>
+                <tr>
+                  <td>Challenger Voucher (SGD $50)</td>
+                  <td>2500</td>
+                  <td><img src="res/images/reward-chlngr.png" alt="Image of Challenger Voucher"></td>
+                  <td>Challenger Vouchers for you to spend and enjoy the fruits of your labour.</td>
+                </tr>
+              <script>
+              function rewards() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("searchRewards");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("searchTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[0];
+                  if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display = "";
+                    } else {
+                      tr[i].style.display = "none";
+                    }
+                  }       
+                }
+              }
+              </script>
+        </div>
     </div>
 </body>
 </html>

@@ -116,6 +116,52 @@ body{
     list-style-image: url(../images/carrot.svg);
     list-style-position: inside;
   }
+  #searchRewards {
+    background: url('/res/images/search_icon.svg'), var(--primary);
+    background-position: 10px 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    width: 80vw;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid var(--accent);
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+  #searchTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  #searchTable td:first-child {
+    font-weight: 700;;
+  }
+  #searchTable th, #searchTable td {
+    text-align: center;
+    padding: 12px;
+  }
+  #searchTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  #searchTable tr.header, #searchTable tr:hover {
+    background-color: var(--accent);
+    color: var(--background);
+  }
+  #searchTable img {
+    max-width: 30vw;
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 50%;
+    padding: 10px;
+  }
+  .rounded {
+    border-radius: 50px;
+  }
   @media (prefers-color-scheme: dark) {
       #logo_big_light {
           display:none !important;
