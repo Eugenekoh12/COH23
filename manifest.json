@@ -31,36 +31,36 @@
         "purpose": "maskable"
       }
     ],
-    /* "shortcuts": [
+    "shortcuts": [
       {
         "name": "Healthy Eating",
         "short_name": "Food",
         "description": "View weather information for today",
-        "url": "/today?source=pwa",
+        "url": "./food.html",
         "icons": [{ "src": "./res/images/food_app.png", "sizes": "192x192" }]
       },
       {
         "name": "Exercising",
         "short_name": "Exercise",
         "description": "View weather information for tomorrow",
-        "url": "/tomorrow?source=pwa",
+        "url": "./exercise.html",
         "icons": [{ "src": "./res/images/exercise_app.png", "sizes": "192x192" }]
       },
       {
         "name": "Sleep Schedule",
         "short_name": "Sleep",
         "description": "View weather information for tomorrow",
-        "url": "/tomorrow?source=pwa",
+        "url": "./sleep.html",
         "icons": [{ "src": "./res/images/sleep_app.png", "sizes": "192x192" }]
       },
       {
         "name": "Rewards Redemption",
         "short_name": "Rewards",
         "description": "View weather information for tomorrow",
-        "url": "/tomorrow?source=pwa",
+        "url": "./rewards.html",
         "icons": [{ "src": "./res/images/rewards_app.png", "sizes": "192x192" }]
       }
-    ], */
-    "description": "Colour our Health WebApp",
+    ],
+    "description": "Keep Colour our Health with you anywhere with our Progressive Web App!",
   
   }
